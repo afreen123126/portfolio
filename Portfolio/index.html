@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afreen portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Importing Poppins and Lora -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<style>
+    .homepage{
+  background: linear-gradient(to right, rgb(106, 106, 248), rgb(77, 77, 212) );
+ height: 100vh;
+ color: white;
+    }
+    .home img{
+        height: 8em;
+    }
+    .home-text{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    body{
+        font-family: 'Poppins', sans-serif; /* Setting Poppins for body text */
+        background-color: #e8eff7;
+        /* background-color: white; */
+    }
+  
+        .col-sm-12{
+          
+            padding: 2em;
+        }
+.section-title::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #007bff;
+            display: block;
+           margin: auto;
+        }
+    .title::after{
+        content: '';
+        width: 120px;
+        height: 3px;
+       background: yellow;
+            display: block;
+           margin: auto;
+    }
+  .btn-container {
+            margin-top: 2rem; /* Spacing for button */
+            text-align: center;
+        }
+        .card-hover:hover{
+            transform: translateY(-10px);
+            transition: transform 0.3s;
+        }
+        .interest li{
+            padding: 10px;
+            margin-left: 4em;
+        }
+        .skills-section h4, .education-section h4, .interests-section h4 {
+    color: #FFCC00;
+    font-weight: bold;
+}
+.skills-section li, .interests-section li, .education-section p, .education-section h6 {
+    color: #EAEAEA; 
+}
+.skills-section h6, .education-section h6 {
+    font-size: 1.1rem;
+    color: #FF7F50; 
+}
+.skill-icon {
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+}
+
+.skill-icon:hover {
+  transform: scale(1.1); /* Scales up the icon slightly */
+  color: #253f5a; /* Change color on hover (Bootstrap primary color) */
+}
+.background {
+    /* background-color: #1F1B24;  */
+    background-color: #007bff;
+}
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.contact-form .form-control::placeholder {
+  color: #bbb;
+}
+
+.contact-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #ffc107;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+.contact-form .btn-primary {
+  background-color: #ffc107;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #e0a800;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    
+            <!-- Navbar content -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand fs-4" href="#">My Portfolio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+         <!-- Navbar content -->
+
+       <!-- home-page-section -->
+        <section id="home">
+        <div class="container-fluid  d-flex flex-column align-items-center justify-content-center homepage ">
+            <div class="home ">
+                <span><img src="images/woman (1).png" class="img-fluid"></span>
+                <span class="home-text">Hi,i'm Fathima afreen</span>
+                <h6>A passionate Software Developer with a love for building impactful,<br> intuitive, and dynamic digital solutions.</h6>  
+            </div>   
+        </div>
+      </section>
+
+    <!-- About-me-section -->
+     <section id="about">
+     <div class="container mt-5 bg-light">
+        <div class="col-sm-12 ">
+             <h2 class="section-title text-center">About Me</h2>
+             <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/laptop.png" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                    <p > a passionate Full Stack Developer dedicated to creating engaging and impactful digital experiences.My journey in tech has fueled my curiosity and commitment to turning innovative ideas into reality. I thrive on collaboration and enjoy working with diverse teams to build solutions that inspire and empower users. I’m always eager to learn and explore new technologies, aiming to make a meaningful difference through my work.<br> Let’s connect and create something amazing together!</p>
+                    <div class="btn-container">
+                        <button type="submit" class="btn btn-primary" onclick="downloadResume()">Download Resume</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+     </div>
+    </section>
+<!-- my-projects-section -->
+ <section id="projects">
+ <div class="container bg-light mt-5">
+    <div class="col-sm-12">
+        <h2 class="section-title text-center">My Projects</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 ">
+                <div class="card shadow card-hover border border-dark">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <div class="card-title"><b>Project 1</b></div>
+                        <div class="card-body">
+                            Description of project 1
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- similar projects add -->
+          <div class="col-md-4 ">
+            <div class="card shadow card-hover border border-dark">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <div class="card-title"><b>Project 1</b></div>
+                    <div class="card-body">
+                        Description of project 1
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card shadow card-hover border border-dark">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <div class="card-title"><b>Project 1</b></div>
+                    <div class="card-body">
+                        Description of project 1
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+ </div>
+</section>
+ <!-- skills, interest, education section -->
+  <section id="portfolio">
+  <div class="container-fluid background mt-5">
+   <div class="col-sm-12">
+    <div class="row ">
+        <div class="col-md-4 mt-5 education-section">
+            <h4 class="text-light text-center title"><i class="bi bi-mortarboard-fill me-3"></i>Experience & Education</h4>
+            <div class="mt-5">  
+                <h6>JUNIOR ANGULAR DEVELOPER</h6>
+                <h6>AITRICH TECHNOLOGIES</h6>
+                <p >contributing to web development projects with a focus on both front-end and back-end technologies.</p>
+            </div>
+            <div class="mt-4 ">  
+                <h6>UNIVERSITY OF CALICUT</h6>
+                <h6>BACHELOR OF COMMERCE</h6>
+                <p>little flower college guruvayoor</p>
+            </div>
+           
+            
+        </div>
+        <div class="col-md-4 mt-5 interests-section">
+            <h4 class="text-light text-center title"><i class="bi bi-palette me-3"></i>Interests</h4>
+            <ul class="mt-5 tex-center interest" style="list-style-type: none;">  
+               <li class="skill-icon">Reading</li>
+               <li class="skill-icon">journaling</li>
+               <li class="skill-icon">learning new things</li>
+               <li class="skill-icon">music</li>
+            </ul>
+           
+        </div>
+        <div class="col-md-3 mt-5 skills-section">
+            <h4 class="text-light text-center title"><i class="bi bi-trophy me-3"></i>My skills</h4>
+            
+            <ul class="mt-5" style="list-style-type: none;">  
+                <h6 class="fs-4">TECHNICAL SKILLS</h6>
+                <li class="skill-icon">HTML</li>
+                <li class="skill-icon">CSS</li>
+                <li class="skill-icon">BOOTSTRAP</li>
+                <li class="skill-icon">ANGULAR</li>
+                <li class="skill-icon">JAVASCIPT</li>
+                <li class="skill-icon">SQL</li>
+                <li class="skill-icon">Node.js:</li> 
+             </ul>
+             <ul class="mt-5 " style="list-style-type: none;">  
+                <h6 class="fs-4">SOFT SKILLS</h6>
+                <li class="skill-icon">PROBLEM-SOLVING</li>
+                <li class="skill-icon">COMMUNICATION</li>
+                <li class="skill-icon">TEAMWORK</li>
+                <li class="skill-icon">ADAPTABILITY</li>
+                <li class="skill-icon">CONTINOUS LEARNING</li>
+             </ul>
+             <ul class="mt-5" style="list-style-type: none;">  
+                <h6 class="fs-4" class="skill-icon">LANGUAGES</h6>
+                <li class="skill-icon">ENGLISH</li>
+                <li class="skill-icon">MALAYALAM</li>
+             </ul>
+        </div>
+    </div>
+   </div>
+  </div>
+</section>
+  <!-- contact-page -->
+  
+  <section id="contact" class="contact-section">
+    <div class="overlay"></div>
+    <div class="container bg-dark">
+      <h2 class="text-center section-title text-light">Get in Touch</h2>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" placeholder="Enter email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="tel:+1234567890" class="contact-icon mx-2 "><i class="fas fa-phone"></i> 8593810264</a>
+      <a href="mailto:afreen@example.com" class="contact-icon mx-2"><i class="fas fa-envelope"></i> fathimafreen439@ggmail.com</a>
+      <a href="https://www.instagram.com/fathima_afreen123/" target="_blank" class="contact-icon mx-2"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com/in/fathima-afreen-7615b3312/" target="_blank" class="contact-icon mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2024 Afreen. All Rights Reserved.</p>
+  </footer>
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+   <script>
+
+ 
+ // Download Resume Function
+ function downloadResume() {
+   window.open("images/Fathima afreen CV Resume.pdf", "_blank"); // Opens the resume in a new tab
+}
+
+ </script>
+</body>
+</html>
